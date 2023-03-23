@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
 
-    <link rel="stylesheet" href="./css/inicio.css">
-    <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/sobreMi.css">
-    <link rel="stylesheet" href="./css/aprendizaje_formaciones.css">
-    <link rel="stylesheet" href="./css/proyectos.css">
-    <link rel="stylesheet" href="./css/hobbies_blandas.css">
-    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/sobreMi.css">
+    <link rel="stylesheet" href="/css/aprendizaje_formaciones.css">
+    <link rel="stylesheet" href="/css/proyectos.css">
+    <link rel="stylesheet" href="/css/hobbies_blandas.css">
+    <link rel="stylesheet" href="/css/form.css">
 </head>
 <body>
-    <script src="./JavaScript/menu.js"></script>
+    <script src="/JavaScript/menu.js"></script>
     <button id="boton-regresar-arriba"  onclick=topFunction()>Regresar arriba</button>
         <img src="images/1678732616932.jpg" alt="perfil" class="inicio__foto">
 
         <div class="titulo__div">
-            <span class="inicio__titulo">Portafolio de proyectos:<br> Bryan Garcia</span>
+            <div><span class="inicio__titulo">Portafolio de proyectos:</span></div>
+            <div><span class="inicio__p">Bryan Garcia</span></div>
         </div>
     </section>
     
@@ -43,7 +44,7 @@
                 <li class="menu__lista"><a href="https://www.linkedin.com/in/bryangramirz98/" class="menu__lista-apps">LinkendIn</a></li>
                 <li class="menu__lista"><a href="https://www.facebook.com/sebastian.ramirezgarcia.566/" class="menu__lista-apps">Facebook</a></li>
                 <li class="menu__lista" ><img class="lista__img" 
-                src="./images/download.svg" alt="download"><a download="pdf" href="cv.pdf" class="menu__lista-apps" >CV</a>
+                src="/images/download.svg" alt="download"><a download="pdf" href="cv.pdf" class="menu__lista-apps" >CV</a>
             </li>
             </ul></li>
         </ul>
@@ -53,27 +54,31 @@
     <h2 class="sobre__titulo">
         Sobre mi
     </h2>
-    <iframe src="./textos/texto__sobre-mi.html" frameborder="0" class="sobre__framework"></iframe>
+    <iframe src="/textos/texto__sobre-mi.html" frameborder="0" class="sobre__framework"></iframe>
     </section>
 
     <section id="aprendizaje" class="aprendizaje">
         <h2> Aprendizaje</h2>
-        <iframe src="./textos/aprendizaje.html" frameborder="0" class="aprendizaje__framework"></iframe>     
+        <iframe src="/textos/aprendizaje.html" frameborder="0" class="aprendizaje__framework"></iframe>     
     </section>
 
     <section id="hobbies_blandas" class="hobbies_blandas">
-            <iframe src="./textos/hobies_blandas.html" frameborder="0" class="hobbies_blandas_iframe"></iframe>
+            <iframe src="/textos/hobies_blandas.html" frameborder="0" class="hobbies_blandas_iframe"></iframe>
     </section>
 
     <section class="proyectos">
         <h3 class="proyectos__titulo">
             Encriptador Alura
         </h3>
-        <iframe src="https://bryangr98.github.io/proyectoEncriptador/" frameborder="0" class="proyectos__iframe" ></iframe>        
+        <iframe src="https://bryangr98.github.io/proyectoEncriptador/" frameborder="0" class="proyectos__iframe" ></iframe> 
+        <h3 class="proyectos__titulo">
+            Pagina Electrica
+        </h3>
+        <iframe src="https://electricaramirez.netlify.app/" frameborder="0" class="proyectos__iframe" ></iframe> 
     </section>
 
     <section id="formaciones" class="formaciones">
-        <iframe src="./textos/formaciones.html" frameborder="0" class="formaciones__iframe"></iframe>
+        <iframe src="/textos/formaciones.html" frameborder="0" class="formaciones__iframe"></iframe>
     </section>
     <section class="form">
         <form id="form" action="mailto:bryangr98@outlook.com" method="POST" enctype="text/plain" >
@@ -92,6 +97,8 @@
     
 <section class="rodapie">
     <div>
+        <p>desarrollado por <br> Bryan Garcia</p>
+        <div><a href="https://github.com/bryangr98">Github</a></div>
         <p><a href='https://dryicons.com/free-icons/listen-music'> Iconos obtenidos de Dryicons </a></p>
         <p><a href="https://app.aluracursos.com/dashboard">Alura</a></p>
     </div>
