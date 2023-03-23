@@ -1,0 +1,141 @@
+/*menu nav*/
+.nav__div{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    position:static;
+    margin-left:60px ;
+}
+.nav{
+    display: flex;
+    display: inline;
+    flex-direction: row;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.nav__lista{
+    display: flex;
+    list-style: none;
+
+}
+.nav__elementos a{
+    text-decoration: none;
+    margin: 5px;
+    color: black;
+
+}
+.nav__elementos a:hover{
+    text-decoration: underline overline 2px green;
+    transition: all .3s;
+}
+
+/*menu float*/
+.menu__redes{
+    position: fixed;
+
+float:right;
+right: 20px;
+top: 20px;
+z-index: 1;
+
+}
+.menu__abrir{
+    display: flex;
+    border-radius: 50%;
+    display:inline-block;
+    padding: 5px;
+    background-color: #9a585f;
+    color: #fff;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    justify-items: center;
+    text-align: center;
+    box-shadow: 0px 2px 32px 5px rgb(215, 106, 139) inset;
+    
+    
+  
+}
+
+.menu__lista-apps{
+    text-decoration: none;
+
+}
+.menu__lista{
+    display:none ;
+    position: relative;
+    right: 18vh;
+    padding: 10;
+    width: 100px;
+    transition: all .3s;
+}
+.lista__img{
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+.menu__abrir:hover  .menu__abrir-lista {
+    transition: all 1s;
+    margin-top: 30%;
+   
+  
+}
+
+
+.menu__abrir:hover{
+    background: radial-gradient(circle 50px, #62a6e5 30%, #5357b0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: none;
+}
+
+.menu__abrir:hover  .menu__lista{
+    display: block;
+    bottom: 20px;
+    transition: .5s;
+    border-radius: 10px;
+    display: inline-block;
+    
+}
+.menu__lista:hover{
+    display: block;
+    background:linear-gradient(#62a6e5 , 15% ,#5357b0 , 70% , #62a6e5);
+    border-radius: 50%;
+}
+
+.menu__lista-apps:hover{
+    color: #fff;
+}
+
+#boton-regresar-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:900px){
+    .nav__lista{
+        flex-direction: column;
+        font-size: 1.5em;
+    }
+    .nav__div{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: auto;
+        justify-content: center;
+    }
+    .nav__elementos{
+        padding: 2px;
+    }
+    .nav{
+        text-align: start;
+        margin:0;
+    }
+}
